@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Khalifa Computer Group - مجموعة خليفة للكمبيوتر">
+    <link href="" rel="shortcut icon" type="image/x-icon">
+
+
+    <title>تطبيق دورة تأهيل موظف البوفيه ذوى الاحتياجات الخاصة</title>
+    <!--=========== Bootstrap RTL Style ===============-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!--=========== FontAwesome  ===============-->
+    <link rel="stylesheet" href="./css/all.css">
+    <!--=========== Animations Css  ===============-->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!--=========== hover Css  ===============-->
+    <link rel="stylesheet" href="./css/hover.css">
+    <!--=========== Home page CSS Style ===============-->
+    <link rel="stylesheet" href="./css/home.css">
+    <!--=========== Main CSS Style ===============-->
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <!-- Modal video player------------------------------------------>
+    <div id="video_popup" class="modal  easein" tabindex="-1" data-easein="bounceIn" role="document" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-lg modal-fullwidth">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <!---modal header---->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" style="text-align:center;font-size:1.2em;"></h4>
+                </div>
+
+                <!---end modal header---->
+                <!---sign language modal body---->
+                <div class="modal-body">
+                    <div class="">
+                        <!----User Guide rows/sentences ----->
+                        <div class="hide_copyright"></div>
+                        <video id="video_player_pop" class="video_player_pop" width="100%" controls>
+                            <source src="" type="video/mp4">
+                            هذا المتصفح لا يدعم تشغيل الفيديو ، يرجى استخدام متصفح الكروم
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!---end Modal popup-------------------------------->
+    <!-- Modal images viewer------------------------------------------>
+
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body ">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <img src="" class="imagepreview img-fluid" style="max-height: 400px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---end Modal image viewer popup-------------------------------->
+    <!-- Start Home page in App -->
+    <section class=" app">
+        <nav class="navbar navbar-expand-lg  navbar-dark">
+
+            <a class="navbar-brand" href="#"><img src="./imgs/man-logo.png" class="" alt=""></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-right"></i> </button>
+
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="wellcome.html">القائمة الرئيسية</a>
+                        <div class="help-buttons">
+                                <div class="help-img">
+                                    <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                        data-toggle="modal" data-target="#video_popup" data-video="">
+                                </div>
+    
+                                <div class="help-icon">
+                                    <i class="fas fa-volume-up pt-1 "></i>
+                                </div>
+    
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">الدورة التدريبة</a>
+                        <div class="help-buttons">
+                                <div class="help-img">
+                                    <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                        data-toggle="modal" data-target="#video_popup" data-video="">
+                                </div>
+    
+                                <div class="help-icon">
+                                    <i class="fas fa-volume-up pt-1 "></i>
+                                </div>
+    
+                            </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a id="orders" class="nav-link" href="drinks.html">الطلبات<sup class="notefication">2</sup></a>
+                        <div class="help-buttons">
+                                <div class="help-img">
+                                    <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                        data-toggle="modal" data-target="#video_popup" data-video="">
+                                </div>
+    
+                                <div class="help-icon">
+                                    <i class="fas fa-volume-up pt-1 "></i>
+                                </div>
+    
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"> المفضلة</a>
+                        <div class="help-buttons">
+                                <div class="help-img">
+                                    <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                        data-toggle="modal" data-target="#video_popup" data-video="">
+                                </div>
+    
+                                <div class="help-icon">
+                                    <i class="fas fa-volume-up pt-1 "></i>
+                                </div>
+    
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-app.html">نبذة عن المشروع </a>
+                        <div class="help-buttons">
+                                <div class="help-img">
+                                    <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                        data-toggle="modal" data-target="#video_popup" data-video="">
+                                </div>
+    
+                                <div class="help-icon">
+                                    <i class="fas fa-volume-up pt-1 "></i>
+                                </div>
+    
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="connect-us.html">إتصل
+                            بنا</a>
+                            <div class="help-buttons">
+                                    <div class="help-img">
+                                        <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                            data-toggle="modal" data-target="#video_popup" data-video="">
+                                    </div>
+        
+                                    <div class="help-icon">
+                                        <i class="fas fa-volume-up pt-1 "></i>
+                                    </div>
+        
+                                </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <!--========================style for topics in home page  =============================-->
+        <section class="topics container">
+            <div class=" row mt-4 justify-content-center">
+                <div class="title  col-sm-6">
+                    <h5>الدورة التدريبية</h5>
+                </div>
+            </div>
+            <div class=" row mt-4 justify-content-center">
+                <div class="  col-sm-6">
+                    <h5>نبذة عن المشروع</h5>
+
+                </div>
+                <article>
+                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
+                    القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي
+                    يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد
+                    ما- للأحرف عوضاً عن استخدام هنا يوجد محتوى نصي، هنا يوجد محتوى نصي فتجعلها تبدو
+                    (أي الأحرف) وكأنها نص مقروء.
+                </article>
+            </div>
+
+            <div class=" row mt-4 justify-content-center">
+                <div class="popup-img card col-sm-12 col-md-6 col-lg-4">
+                    <img src="./imgs/introo.jpg" alt="image"
+                        class=" rounded-circle WOW   topic-img  animated zoomIn img-fluid">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="introAndDefinition.html"> مقدمة وتعريفات</a> </h5>
+                        <div class="help-buttons">
+                            <div class="help-img">
+                                <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                    data-toggle="modal" data-target="#video_popup" data-video="">
+                            </div>
+
+                            <div class="help-icon">
+                                <i class="fas fa-volume-up pt-1 "></i>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="popup-img card col-sm-12  col-md-6 col-lg-4">
+                    <img src="./imgs/tools1.jpg" alt=""
+                        class=" rounded-circle wow   topic-img  animated zoomIn img-fluid">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="tools.html"> أهم الادوات والمعدات </a> </h5>
+                        <div class="help-buttons">
+                            <div class="help-img">
+                                <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                    data-toggle="modal" data-target="#video_popup" data-video="">
+                            </div>
+
+                            <div class="help-icon">
+                                <i class="fas fa-volume-up pt-1 "></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-img card col-sm-12  col-md-6 col-lg-4">
+                    <img src="./imgs/ways.jpg" alt=""
+                        class="  rounded-circle wow   topic-img  animated zoomIn img-fluid">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="goodWays.html"> الطرق السليمة للتخزين </a></h5>
+                        <div class="help-buttons">
+                            <div class="help-img">
+                                <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                    data-toggle="modal" data-target="#video_popup" data-video="">
+                            </div>
+
+                            <div class="help-icon">
+                                <i class="fas fa-volume-up pt-1 "></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-img card col-sm-12  col-md-6 col-lg-4">
+                    <img src="./imgs/servicess.jpg" alt=""
+                        class=" rounded-circle wow   topic-img  animated zoomIn img-fluid">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="professionalServices.html"> طرق التقديم المحترفة </a></h5>
+                        <div class="help-buttons">
+                            <div class="help-img">
+                                <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                    data-toggle="modal" data-target="#video_popup" data-video="">
+                            </div>
+
+                            <div class="help-icon">
+                                <i class="fas fa-volume-up pt-1 "></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-img card col-sm-12  col-md-6 col-lg-4">
+                    <img src="./imgs/types-drinks.jpg" alt=""
+                        class=" rounded-circle wow   topic-img  animated zoomIn img-fluid">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="typeOfDrinks.html"> انواع المشروبات</a></h5>
+                        <div class="help-buttons">
+                            <div class="help-img">
+                                <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                    data-toggle="modal" data-target="#video_popup" data-video="">
+                            </div>
+
+                            <div class="help-icon">
+                                <i class="fas fa-volume-up pt-1 "></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-img card col-sm-12  col-md-6 col-lg-4">
+                    <img src="./imgs/questions.png" alt=""
+                        class=" rounded-circle wow   topic-img  animated zoomIn img-fluid">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="questions.html">أسئلة شائعة</a></h5>
+                        <div class="help-buttons">
+                            <div class="help-img">
+                                <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                    data-toggle="modal" data-target="#video_popup" data-video="">
+                            </div>
+
+                            <div class="help-icon">
+                                <i class="fas fa-volume-up pt-1 "></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-img card col-sm-12  col-md-6 col-lg-4">
+                    <img src="./imgs/cvs.jpg" alt="" class=" rounded-circle wow   topic-img  animated zoomIn img-fluid">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="buildCVs.html"> نماذج للسيرة الذاتية</a> </h5>
+                        <div class="help-buttons">
+                            <div class="help-img">
+                                <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                    data-toggle="modal" data-target="#video_popup" data-video="">
+                            </div>
+
+                            <div class="help-icon">
+                                <i class="fas fa-volume-up pt-1 "></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Start Order button -->
+        <div class="order-btn">
+            <button type="button" class="btn" data-toggle="modal" data-target="#order-Modal">
+                3
+            </button>
+        </div>
+        <!-- Modal Orders -->
+        <div class="modal fade" id="order-Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title " id="ModalLabel">طلبات لم تسلم</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered  table-responsive-sm text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">صورة الموظف</th>
+                                    <th scope="col">رقم الغرفة</th>
+                                    <th scope="col">نوع المشروب</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><img src="./imgs/default.jpg" class="img-fluid rounded-circle" alt=""></td>
+                                    <td>45</td>
+                                    <td>قهوة
+                                        <hr>
+                                        <span>الموصفات</span>
+                                        <hr>
+                                        <ol>
+                                            <li>سكر زيادة</li>
+                                            <li>فنجان</li>
+                                        </ol>
+                                    </td>
+
+                                    <td><button class="btn btn-danger">مسح</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td><img src="./imgs/default.jpg" class="img-fluid rounded-circle" alt=""></td>
+                                    <td>44</td>
+                                    <td>شاى
+                                        <hr>
+                                        <span>الموصفات</span>
+                                        <hr>
+                                        <ol>
+                                            <li>سكر مظبوط</li>
+                                            <li>مج</li>
+                                        </ol>
+                                    <td><button class="btn btn-danger">مسح</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td><img src="./imgs/default.jpg" class="img-fluid rounded-circle" alt=""></td>
+                                    <td>44</td>
+                                    <td>مانجا
+                                        <hr>
+                                        <span class="text-info">الموصفات</span>
+                                        <hr>
+                                        <ol>
+                                            <li> لا يوجد اضافات</li>
+                                        </ol>
+                                    </td>
+                                    <td><button class="btn btn-danger">مسح</button></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">إغلاق</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Modal Orders-->
+        <!-- Start Button Scroll UP -->
+        <div class='Scroll-up'>
+            <i class='fa fa-angle-double-up'></i>
+        </div>
+        <!-- Start Footer  -->
+        <footer>
+            <div class="copy-right">
+                <p>جميع الحقوق محفوظة لدى شركة خليفة <a href='#'> KCG</a></p>
+            </div>
+        </footer>
+
+    </section>
+
+    <!--================================== Jquery CDN Links & bootstap Links ========================================-->
+    <script src="./js/jquery.js" type=''></script>
+    <script src="./js/jquery-1.11.1.min.js" type=''></script>
+    <script src="./js/jquery.nicescroll.min.js" type=''></script>
+    <script src="./js/popper.min.js" type=''></script>
+    <script src="./js/bootstrap.min.js" type=''></script>
+    <script src="./js/wow.js" type=''></script>
+    <script src="./js/customAnimation.js"></script>
+    <script src="./js/main.js" type=''></script>
+
+</body>
+
+</html>

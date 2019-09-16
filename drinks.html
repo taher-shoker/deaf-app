@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="DEAF APP">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="KCG">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق دورة تأهيل موظف البوفيه ذوى الاحتياجات الخاصة</title>
+    <!--=========== Bootstrap Style ===============-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!--=========== FontAwesome  ===============-->
+    <link rel="stylesheet" href="./css/all.css">
+    <!--=========== Animations Css  ===============-->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!--=========== hover Css  ===============-->
+    <link rel="stylesheet" href="./css/hover.css">
+    <!--=========== Swiper Css  ===============-->
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <!--===========  Style for customSwiper Css  ===============-->
+    <link rel="stylesheet" href="./css/customSwiper.css">
+    <!--=========== drinks page CSS Style ===============-->
+    <link rel="stylesheet" href="./css/drinks.css">
+    <!--=========== CSS Style ===============-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- Modal video player------------------------------------------>
+    <div id="video_popup" class="modal  easein" tabindex="-1" data-easein="bounceIn" role="document" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered  modal-lg modal-fullwidth">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <!---modal header---->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" style="text-align:center;font-size:1.2em;"></h4>
+                    </div>
+    
+                    <!---end modal header---->
+                    <!---sign language modal body---->
+                    <div class="modal-body">
+                        <div class="">
+                            <!----User Guide rows/sentences ----->
+                            <div class="hide_copyright"></div>
+                            <video id="video_player_pop" class="video_player_pop" width="100%" controls>
+                                <source src="" type="video/mp4">
+                                هذا المتصفح لا يدعم تشغيل الفيديو ، يرجى استخدام متصفح الكروم
+                            </video>
+                        </div>
+                    </div>
+                    <!---end modal body---->
+                    <div class="modal-footer">
+                        <button type="button" id="close_fav_pop_btn" class="btn btn-danger"
+                            data-dismiss="modal">إغلاق</button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <!---end Modal popup-------------------------------->
+         <!-- Modal images viewer------------------------------------------>
+    
+         <div class="modal" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-body">
+                     <button type="button" class="close" data-dismiss="modal"><span
+                             aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                     <img src=""class="imagepreview img-fluid" style="max-height: 400px;">
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!---end Modal image viewer popup-------------------------------->
+    <!-- Start  in App -->
+    <section class=" app">
+            <nav class="navbar navbar-expand-lg  navbar-dark">
+
+                    <a class="navbar-brand" href="#"><img src="./imgs/man-logo.png" class="" alt=""></a>
+        
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-right"></i> </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="wellcome.html">القائمة الرئيسية</a>
+                                <div class="help-buttons">
+                                        <div class="help-img">
+                                            <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                                data-toggle="modal" data-target="#video_popup" data-video="">
+                                        </div>
+            
+                                        <div class="help-icon">
+                                            <i class="fas fa-volume-up pt-1 "></i>
+                                        </div>
+            
+                                    </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">الدورة التدريبة</a>
+                                <div class="help-buttons">
+                                        <div class="help-img">
+                                            <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                                data-toggle="modal" data-target="#video_popup" data-video="">
+                                        </div>
+            
+                                        <div class="help-icon">
+                                            <i class="fas fa-volume-up pt-1 "></i>
+                                        </div>
+            
+                                    </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="drinks.html">الطلبات<sup class="animated ">2</sup></a>
+                                <div class="help-buttons">
+                                        <div class="help-img">
+                                            <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                                data-toggle="modal" data-target="#video_popup" data-video="">
+                                        </div>
+            
+                                        <div class="help-icon">
+                                            <i class="fas fa-volume-up pt-1 "></i>
+                                        </div>
+            
+                                    </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html"> المفضلة</a>
+                                <div class="help-buttons">
+                                        <div class="help-img">
+                                            <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                                data-toggle="modal" data-target="#video_popup" data-video="">
+                                        </div>
+            
+                                        <div class="help-icon">
+                                            <i class="fas fa-volume-up pt-1 "></i>
+                                        </div>
+            
+                                    </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-app.html">نبذة عن المشروع </a>
+                                <div class="help-buttons">
+                                        <div class="help-img">
+                                            <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                                data-toggle="modal" data-target="#video_popup" data-video="">
+                                        </div>
+            
+                                        <div class="help-icon">
+                                            <i class="fas fa-volume-up pt-1 "></i>
+                                        </div>
+            
+                                    </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="connect-us.html">إتصل
+                                    بنا</a>
+                                    <div class="help-buttons">
+                                            <div class="help-img">
+                                                <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                                    data-toggle="modal" data-target="#video_popup" data-video="">
+                                            </div>
+                
+                                            <div class="help-icon">
+                                                <i class="fas fa-volume-up pt-1 "></i>
+                                            </div>
+                
+                                        </div>
+                            </li>
+        
+                        </ul>
+        
+                    </div>
+                </nav>
+        
+        <!--========================style for topics in drinks page  =============================-->
+        <section class="drinks container">
+            <div class=" row mt-4 justify-content-center">
+                <div class="title  col-sm-6">
+                    <h5> المشروبات</h5>
+                </div>
+            </div>
+            <div class=" search-box row mt-4 justify-content-center">
+                <div class="search">
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <input type="text" class="searchTerm" placeholder="إبحث عن المشروب" required
+                        onfocus="this.placeholder=''" onblur="this.placeholder='إبحث عن المشروب'"
+                        placeholder="إبحث عن المشروب">
+
+                </div>
+            </div>
+            <div class=" row mt-4 ">
+                <h3>المشروبات الساخنة:</h3>
+              
+                <div class="card col-sm-12">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="popup-img swiper-slide">
+                                <img src="./imgs/coffee.jpg" class="img-drink  rounded-circle img-fluid"  data-toggle="modal" data-target="#ModalDrinks" alt="...">
+                                <h4 class="card-title  "> قهوة </h4>
+                                <div class="help-buttons">
+                                        <div class="help-img">
+                                            <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                                data-toggle="modal" data-target="#video_popup" data-video="">
+                                        </div>
+            
+                                        <div class="help-icon">
+                                            <i class="fas fa-volume-up pt-1 "></i>
+                                        </div>
+            
+                                    </div>
+                            </div>
+                            <div class="popup-img swiper-slide">
+                                <img src="./imgs/tea.jpg" class="img-drink rounded-circle img-fluid"  data-toggle="modal" data-target="#ModalDrinks" alt="...">
+                                <h4 class="card-title  "> شاى </h4>
+                                <div class="help-buttons">
+                                        <div class="help-img">
+                                            <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                                data-toggle="modal" data-target="#video_popup" data-video="">
+                                        </div>
+            
+                                        <div class="help-icon">
+                                            <i class="fas fa-volume-up pt-1 "></i>
+                                        </div>
+            
+                                    </div>
+                            </div>
+                            <div class="popup-img swiper-slide">
+                                <img src="./imgs/n3na3.jpg" class="img-drink rounded-circle img-fluid"  data-toggle="modal" data-target="#ModalDrinks" alt="...">
+                                <h4 class="card-title  "> نعناع </h4>
+                                <div class="help-buttons">
+                                        <div class="help-img">
+                                            <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                                data-toggle="modal" data-target="#video_popup" data-video="">
+                                        </div>
+            
+                                        <div class="help-icon">
+                                            <i class="fas fa-volume-up pt-1 "></i>
+                                        </div>
+            
+                                    </div>
+                            </div>
+
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> 
+                    </div>
+                </div>
+            </div>
+            <div class=" row mt-4 ">
+                <h3>المشروبات الباردة :</h3>
+               
+                <div class="card col-sm-12">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="popup-img swiper-slide">
+                                <img src="./imgs/mango.jpg" class="img-drink  rounded-circle img-fluid"  data-toggle="modal" data-target="#ModalDrinks"alt="...">
+                                <h4 class="card-title  "> مانجا </h4>
+                                <div class="help-buttons">
+                                        <div class="help-img">
+                                            <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                                data-toggle="modal" data-target="#video_popup" data-video="">
+                                        </div>
+            
+                                        <div class="help-icon">
+                                            <i class="fas fa-volume-up pt-1 "></i>
+                                        </div>
+            
+                                    </div>
+                            </div>
+                            <div class="popup-img swiper-slide">
+                                <img src="./imgs/lemon.jpg" class="img-drink rounded-circle img-fluid"  data-toggle="modal" data-target="#ModalDrinks" alt="...">
+                                <h4 class="card-title  "> ليمون </h4>
+                                <div class="help-buttons">
+                                        <div class="help-img">
+                                            <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                                data-toggle="modal" data-target="#video_popup" data-video="">
+                                        </div>
+            
+                                        <div class="help-icon">
+                                            <i class="fas fa-volume-up pt-1 "></i>
+                                        </div>
+            
+                                    </div>
+                            </div>
+
+                            <div class="popup-img swiper-slide">
+                                <img src="./imgs/cola.jpg" class="img-drink rounded-circle img-fluid"
+                                    data-toggle="modal" data-target="#ModalDrinks" alt="...">
+                                <h4 class="card-title  "> بيبسى </h4>
+                                <div class="help-buttons">
+                                        <div class="help-img">
+                                            <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                                data-toggle="modal" data-target="#video_popup" data-video="">
+                                        </div>
+            
+                                        <div class="help-icon">
+                                            <i class="fas fa-volume-up pt-1 "></i>
+                                        </div>
+            
+                                    </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> 
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Order Modal -->
+        <div class="modal fade" id="ModalDrinks" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">إضافة طلب</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="input-control">
+                                <label for=""> إسم المشروب</label>
+                                <div class="help-buttons">
+                                        <div class="help-img">
+                                            <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                                data-toggle="modal" data-target="#video_popup" data-video="">
+                                        </div>
+            
+                                        <div class="help-icon">
+                                            <i class="fas fa-volume-up pt-1 "></i>
+                                        </div>
+            
+                                    </div>
+                                <input type="email" class="form-control" id="" aria-describedby="emailHelp"
+                                    value="بيبسى">
+
+                            </div>
+                            <address> الاضافات</address>
+                            <hr>
+                            <div class="input-control">
+                                <label for=""> إضافة سكر</label>
+
+                                <div class="help-buttons">
+                                        <div class="help-img">
+                                            <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=""
+                                                data-toggle="modal" data-target="#video_popup" data-video="">
+                                        </div>
+            
+                                        <div class="help-icon">
+                                            <i class="fas fa-volume-up pt-1 "></i>
+                                        </div>
+            
+                                    </div>
+
+                                <div class="input-counter">
+                                    <div class="value-button" id="decrease" onclick="decreaseValue()"
+                                        value="Decrease Value">-</div>
+                                    <input type="text" id="number" value="0" />
+                                    <div class="value-button" id="increase" onclick="increaseValue()"
+                                        value="Increase Value">+</div>
+                                </div>
+
+
+                            </div>
+                            <hr>
+
+                            <button type="submit" class="btn btn-primary">تجهيز المشروب</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">تم </button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">إغلاق</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- Start Button Scroll UP -->
+         <div class='Scroll-up'>
+            <i class='fa fa-angle-double-up'></i>
+        </div>
+        <!-- Start Footer  -->
+        <footer>
+            <div class="copy-right">
+                <p>جميع الحقوق محفوظة لدى شركة خليفة <a href='#'> KCG</a></p>
+            </div>
+        </footer>
+    </section>
+
+    <!--================================== Jquery CDN Links & bootstap Links ========================================-->
+    <script src="./js/jquery.js" type=''></script>
+    <script src="./js/jquery-1.11.1.min.js" type=''></script>
+    <script src="./js/jquery.nicescroll.min.js" type=''></script>
+    <script src="./js/popper.min.js" type=''></script>
+    <script src="./js/bootstrap.min.js" type=''></script>
+    <script src="./js/wow.js" type=''></script>
+    <script src="./js/swiper.min.js" type=''></script>
+    <script src="./js/customSwiper.js" type=''></script>
+    <script src="./js/counterInput.js" type=''></script>
+    <script src="./js/customAnimation.js"></script>
+    <script src="./js/main.js" type=''></script>
+
+</body>
+
+</html>

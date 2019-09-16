@@ -1,0 +1,107 @@
+.topics {
+    padding: 30px 20px; 
+  
+}
+article {
+    color: #000;
+    font-size: 17px;
+    text-align: justify;
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.topics .card {
+    
+  text-align: center;
+  padding: 15px 8px 0 8px;
+  border-radius: 30px;
+  border: 1px solid #ececec;
+  color: #343a40;
+  -moz-box-shadow: 5px 5px 5px #a59b96;
+-webkit-box-shadow: 5px 5px 5px #a59b96;
+box-shadow: 3px 3px 7px #a59b96;
+height: auto;
+background: #fefefee6;
+align-self: center;
+margin: 10px 0;
+
+}
+.card .topic-img {
+   max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    margin-bottom: 25px;
+    border: 1px solid #0394c9;
+
+}
+.card .card-title a {
+    color: #0394c9;
+    width: 100%
+
+}  
+h5 {
+    text-align: center;
+    color: #0394c9
+}
+  .help-buttons {
+    background: #ececec;
+    color: #000;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    max-width: 50%;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+}
+
+.help-buttons .help-img img {
+    height: auto;
+    height: 30px;
+   
+}
+.help-buttons .help-icon {
+ font-size: 18px
+}
+
+/*=========================Style for media queries  ============================*/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {  }
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (min-width: 767.98px) {
+    
+    .topics .card {
+        max-width: 48%;
+        margin: 5px;
+    }
+ }
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+   
+    
+    .card .help-buttons{
+        width: 100%
+    }
+ }
+
+/* Large devices (desktops, greate than 1200px)*/
+@media (min-width: 992px ) {
+   
+
+  
+.topics .card {
+    max-width: 32%;
+    margin: 5px;
+}
+
+    
+    .card .help-buttons{
+        width: 90%
+    }
+ }

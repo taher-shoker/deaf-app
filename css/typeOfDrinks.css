@@ -1,0 +1,59 @@
+.carousel-cell {
+  background: #8C8;
+  counter-increment: carousel-cell;
+  color: white;
+  /* cell number */
+}
+.carousel-cell:before {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+}
+
+.carousel-main .carousel-cell {
+  width: 100%;
+  height: 360px;
+  font-size: 5rem;
+}
+
+.carousel-nav {
+  width: 300px;
+  -webkit-transform: rotate(90deg) translate(30px, -100%);
+          transform: rotate(90deg) translate(30px, -100%);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+@media screen and (max-width: 1200px) {
+  .carousel-nav {
+    -webkit-transform: rotate(90deg) translate(30px, -50%);
+            transform: rotate(90deg) translate(30px, -50%);
+  }
+}
+.carousel-nav .carousel-cell {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  /* selected cell */
+}
+.carousel-nav .carousel-cell.is-nav-selected {
+  background: #0394c9;
+}
+.carousel-nav .flickity-prev-next-button {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+}
+.carousel-nav .flickity-prev-next-button.previous {
+  left: -40px;
+}
+.carousel-nav .flickity-prev-next-button.next {
+  right: -40px;
+}

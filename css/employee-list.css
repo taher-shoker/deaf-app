@@ -1,0 +1,46 @@
+.employee-lists {
+    margin-top: 30px;
+    min-height: 100%
+}
+
+
+.employee-lists table {
+    margin-top: 30px;
+    color: #000;
+    height: 100%;
+    
+}
+table tbody .img-employee {
+    text-align: center
+}
+
+.table-bordered  thead th{
+    position: relative;
+    height: 80px;
+    text-align: center;
+}
+.employee-lists .next {
+    background: #0394c9;
+    color: #000;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.help-buttons {
+    background: #ececec;  
+   
+    
+    color: #000;
+    border-radius: 20px;
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 7px;
+    line-height: 10px;
+    height: 29px;
+    position: absolute;
+ 
+    cursor: pointer;
+}

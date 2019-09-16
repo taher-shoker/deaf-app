@@ -1,0 +1,157 @@
+.drinks {
+    padding: 30px 20px;
+}
+
+
+.drinks h3 {
+    color: #20242b;
+    font-weight: bold;
+}
+
+.swiper-slide .img-drink {
+    width: 200px;
+    height: 200px;
+    max-width:100%
+}
+
+.drinks .card {
+    
+    text-align: center;
+    padding: 38px 8px 21px 8px;
+    border-radius: 30px;
+    color: #000;
+ 
+  height: auto;
+  background: #fff;
+  align-self: center;
+  margin: 10px 0;
+  min-height: 400px;
+  }
+  .card .card-title {
+      margin: 10px 0;
+      color: #0394c9
+  }
+   .help-buttons {
+
+    margin: 0 auto;
+    margin-bottom: 80px;
+    background: #ececec;
+    color: #000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    max-width: 50%;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+}
+.help-buttons .help-img img {
+  height: auto;
+  height: 30px;
+ 
+}
+.help-buttons .help-icon {
+font-size: 18px
+}
+
+/*================= style for search box ========================*/
+
+.search {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #0394c9;
+    border-right: none;
+    padding: 5px;
+    height: 38px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #0394c9;
+  }
+  
+  .searchTerm::placeholder{
+    color: #000
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 38px;
+    border: 1px solid #0394c9;
+    background: #0394c9;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: -40px;
+  }
+  
+
+  /*============= style for counterInput ===============*/
+  .input-counter {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    
+    display: flex;
+    
+  }
+  
+  .value-button {
+    display: inline-block;
+    border: 1px solid #0394c9;
+    margin: 0px;
+    width: 40px;
+    height: 30px;
+    background: #0394c9;
+    color: #fff;
+   
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+  
+  form #decrease {
+    margin-right: -4px;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  form #increase {
+    margin-left: -4px;
+    
+  
+    border-radius: 8px 0 0 8px;
+  }
+  
+  form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 30px;
+  }
+  
+ 
+  /*==================style for modal ==================*/
+.input-control {
+    position: relative;
+}
+
+  .modal-body .help-buttons {
+      margin-bottom: 0px;
+      float: left;
+  }
