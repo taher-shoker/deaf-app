@@ -169,6 +169,11 @@ input::placeholder{
 }
 /* Small devices (landscape phones, less than 768px)*/
 @media (min-width: 767.98px) {
+    #register-form,#login-form,#employee-form  {
+        width: 70%;
+        height: auto
+  
+    }
     .bottom .ask {
         font-size: 20px;
     }

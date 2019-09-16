@@ -67,10 +67,10 @@
       <div class="title-form">
         <h4> تسجيل دخول</h4>
       </div>
-      <form id="login-form" action=''>
+      <form id="login-form" name="Form" action=''>
         <div class="input-control">
           <label> <i class="fas fa-user"></i></label>
-          <input type="text" id="fname" name="fname" value="" placeholder="إسم المستخدم" required
+          <input type="text" id="name" name="Name" value="" placeholder="إسم المستخدم" 
             onfocus="this.placeholder=''" onblur="this.placeholder='إسم المستخدم'">
           <div class="help-buttons">
             <div class="help-img">
@@ -88,7 +88,7 @@
         </div>
         <div class="input-control">
           <label> <i class="fas fa-phone-alt"></i> </label>
-          <input type="text" id="phone" name="phone" value="" placeholder="رقم التليفون" required
+          <input type="text" id="phone" name="Phone" value="" placeholder="رقم التليفون" 
             onfocus="this.placeholder=''" onblur="this.placeholder='رقم التليفون'">
           <div class="help-buttons">
             <div class="help-img">
@@ -104,7 +104,7 @@
 
 
         </div>
-        <Button type='submit' id='login' class='btn mt-4' onclick="window.location.href='home.html'">دخول </button>
+        <Button type='submit' id='login' class='btn mt-4' >دخول </button>
       </form>
 
       <div class="bottom">
@@ -117,12 +117,13 @@
   </section>
 
   <!--================================== Jquery CDN Links & bootstap Links ========================================-->
-  <script src="./js/jquery.js" type=''></script>
-  <script src="./js/jquery-1.11.1.min.js" type=''></script>
-  <script src="./js/popper.min.js" type=''></script>
-  <script src="./js/bootstrap.min.js" type=''></script>
-  <script src="./js/wow.js" type=''></script>
-  <script src="./js/main.js" type='javascript'></script>
+  <script src="./js/jquery.js" type=''crossorigin="anonymous"></script>
+  <script src="./js/jquery-1.11.1.min.js" type=''crossorigin="anonymous"></script>
+  <script src="./js/popper.min.js" type=''crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js" type=''crossorigin="anonymous"></script>
+  <script src="./js/wow.js" type=''crossorigin="anonymous"></script>
+  <script src="./js/inputValidation.js" type=''crossorigin="anonymous"></script>
+  <script src="./js/main.js" type='javascript'crossorigin="anonymous"></script>
 
 </body>
 
