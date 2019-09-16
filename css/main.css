@@ -171,7 +171,7 @@ nav .navbar-toggler i {
     background: linear-gradient(to left, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     z-index: 999;
-    width: 70%;
+    width: 75%;
     padding: 0px 10px;
     text-align: right;
     position: absolute;
@@ -261,31 +261,7 @@ nav .navbar-toggler i {
 }
 
 
-/*================== Style for Order Modal =======================*/
-.modal-body {
-    position: relative;
-    max-height: calc(100vh - 210px);
-    overflow-y: auto;
-}
 
-.modal-body input {
-    display: block;
-    width: 100%;
-    margin: 5px auto;
-    padding: 5px;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #0394c9;
-    font-size: 30px;
-    color: #0394c9;
-   
-}
-.modal-body .help-buttons {
-   
-}
-ol {
-    padding: 0  10px
-}
 
 /*======================= Style for footer==========================*/
 footer {

@@ -28,8 +28,10 @@
   min-height: 400px;
   }
   .card .card-title {
+    padding-top: 20px;
       margin: 10px 0;
-      color: #0394c9
+      color: #0394c9;
+      cursor: pointer;
   }
    .help-buttons {
 
@@ -108,7 +110,7 @@ font-size: 18px
     border: 1px solid #0394c9;
     margin: 0px;
     width: 40px;
-    height: 30px;
+    height: 23px;
     background: #0394c9;
     color: #fff;
    
@@ -142,16 +144,42 @@ font-size: 18px
     border-bottom: 1px solid #ddd;
     margin: 0px;
     width: 40px;
-    height: 30px;
+    height: 23px;
+    font-size: 20px;
   }
   
  
   /*==================style for modal ==================*/
+
+  /*================== Style for Order Modal =======================*/
+.modal-body {
+  position: relative;
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+}
 .input-control {
-    position: relative;
+  position: relative;
+  padding-bottom: 20px;
+}
+.modal-body input {
+  display: block;
+  width: 50%;
+ 
+  padding: 5px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #0394c9;
+  font-size: 30px;
+  color: #0394c9;
+ 
 }
 
-  .modal-body .help-buttons {
-      margin-bottom: 0px;
-      float: left;
-  }
+
+.modal-body .help-buttons {
+    margin-bottom: 0px;
+    float: left;
+}
+
+ol {
+  padding: 0  10px
+}
