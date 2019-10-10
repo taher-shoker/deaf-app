@@ -15,7 +15,7 @@
     padding: 10px;
     height: 100%;
     background: #fff;
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
@@ -149,11 +149,7 @@ input:focus {
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-    #register-form,#login-form,#employee-form {
-      
-        height: 99%;
-    
-    }
+   
 
 .bottom .ask {
     font-size: 15px;
@@ -179,10 +175,7 @@ input::placeholder{
 
 /* Medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) { 
-    #register-form,#login-form,#employee-form {
-    
-        height: 90%;
-    }
+ 
     
   
  }
