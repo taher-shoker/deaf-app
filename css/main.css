@@ -295,6 +295,11 @@ footer a:hover{
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
+.navbar-dark .nav-item sup {
+    right: 55px;
+    top: 5px;
+}
+ 
     .wellcome-box .orders  {
       
      
