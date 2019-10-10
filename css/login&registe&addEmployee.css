@@ -13,7 +13,7 @@
 }
 #register-form,#login-form,#employee-form {
     padding: 10px;
-    min-height: 360px;
+    height: 100%;
     background: #fff;
     border: 1px solid #0394c9;
     width: 40%;
@@ -150,10 +150,7 @@ input:focus {
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-#register-form,#login-form,#employee-form  {
-    width: 100%;
-    min-height: 360px;
-}
+
 .bottom .ask {
     font-size: 15px;
 }
@@ -169,11 +166,7 @@ input::placeholder{
 }
 /* Small devices (landscape phones, less than 768px)*/
 @media (min-width: 767.98px) {
-    #register-form,#login-form,#employee-form  {
-        width: 70%;
-        height: auto
-  
-    }
+   
     .bottom .ask {
         font-size: 20px;
     }
@@ -189,11 +182,7 @@ input::placeholder{
 
 /* Large devices (desktops, greate than 1200px)*/
 @media (min-width: 992px ) {
-    #register-form,#login-form,#employee-form  {
-        width: 40%;
-        min-height: 400px;
-    }
-
+ 
     input::placeholder{
         padding-right: 4px;
         font-size: 20px;
