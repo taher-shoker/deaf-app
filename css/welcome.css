@@ -29,12 +29,13 @@
    max-width: 100%;
    width: 300px;
    height: auto;
+   padding: 25px 0;
 } 
 
  .bottom-links {
    width: 58%;
    margin: 0 auto;
-   margin-top: 50px
+   margin-top: 40px
   
  }
 
