@@ -1,0 +1,18 @@
+{
+    "drinks":{
+        "hotDrinks":[{
+            "id":1,
+            "drinkName":"قهوة",
+            "drinkImage":"",
+            "videoDrink":"",
+            "audioDrink":""
+        }],
+        "coldDrink":[{
+            "id":1,
+            "drinkName":"قهوة",
+            "drinkImage":"",
+            "videoDrink":"",
+            "audioDrink":""
+        }]
+    }
+}

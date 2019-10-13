@@ -29,7 +29,9 @@ a:hover {
     cursor: pointer;
    
 }
-
+.imagepreview  {
+    width: 100%;
+}
 
 .app {  
    position: relative;
@@ -40,7 +42,7 @@ a:hover {
 }
 .app section {
     
-   min-height: 500px;
+   min-height: 606px;
     overflow: hidden;
    
 }
