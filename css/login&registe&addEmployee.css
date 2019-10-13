@@ -154,7 +154,7 @@ input:focus {
     padding-top: 80px;
 }
 .btn.return {
-    width: 50%;
+    width: 100px;
     background: #fff;
     margin: 10px 0;
     font-size: 18px;
