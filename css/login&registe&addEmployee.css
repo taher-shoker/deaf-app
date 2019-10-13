@@ -151,8 +151,18 @@ input:focus {
 .title-form {
     margin: 0;
     padding-bottom: 0; 
-    padding-top: 10px;
+    padding-top: 80px;
 }
+.btn.return {
+    width: 50%;
+    background: #fff;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.btn.return:hover{
+    background: #000;
+    color: #fff;
+} 
 /****************style for addEmployee page ****************/
 #emp-image{
     display: none;
