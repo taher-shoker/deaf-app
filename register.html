@@ -67,10 +67,10 @@
     <div class="register">
      <div class="title-form"><h4> إنشاء حساب</h4></div> 
 
-      <form id="register-form" method="POST" action=''>
+      <div id="register-form" method="POST" action=''>
           <div class="input-control">
               <label> <i class="fas fa-user"></i></label>
-              <input type="text" id="fname" name="fname" value="" placeholder="إسم المستخدم" required
+              <input type="text" id="name" name="name" value="" placeholder="إسم المستخدم" required
                 onfocus="this.placeholder=''" onblur="this.placeholder='إسم المستخدم'">
                 <div class="help-buttons">
                     <div class="help-img">
@@ -104,7 +104,7 @@
             </div>
         <div class="input-control">
             <label> <i class="fas fa-building"></i></label>
-          <input type="text" name="company-name" value="" placeholder="إسم الشركة" required  onfocus="this.placeholder=''" onblur="this.placeholder='إسم الشركة'">
+          <input type="text" id='company-name' name="company-name" value="" placeholder="إسم الشركة" required  onfocus="this.placeholder=''" onblur="this.placeholder='إسم الشركة'">
           <div class="help-buttons">
               <div class="help-img">
                 <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class="" data-toggle="modal"
@@ -117,8 +117,8 @@
   
             </div>
         </div>
-        <Button type='submit' id='register' class='btn mt-4' >إنشاء </button>
-      </form>
+        <Button type='submit' id='register' class='btn mt-4 btn-action' >إنشاء </button>
+      </div>
       <div class="bottom">
         <p class="ask">هل لديك حساب؟
           <a href="login.html">سجل الأن</a>
@@ -129,12 +129,13 @@
   </section>
 
   <!--================================== Jquery CDN Links & bootstap Links ========================================-->
-  <script src="./js/jquery.js" type=''crossorigin="anonymous"></script>
-  <script src="./js/jquery-1.11.1.min.js" type=''crossorigin="anonymous"></script>
-  <script src="./js/popper.min.js" type=''crossorigin="anonymous"></script>
-  <script src="./js/bootstrap.min.js" type=''crossorigin="anonymous"></script>
-  <script src="./js/wow.js" type=''crossorigin="anonymous"></script>
-  <script src="./js/main.js" type='javascript'crossorigin="anonymous"></script>
+  <script src="./js/jquery.js" crossorigin="anonymous"></script>
+  <script src="./js/jquery-1.11.1.min.js" crossorigin="anonymous"></script>
+  <script src="./js/popper.min.js" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="./js/wow.js" crossorigin="anonymous"></script>
+  <script src="./js/register.js" crossorigin="anonymous"></script>
+  <script src="./js/main.js" crossorigin="anonymous"></script>
 
 </body>
 

@@ -1,3 +1,12 @@
+var x = JSON.parse(localStorage.getItem("user"));
+console.log(x)
+if (x === null || x.length == 0) {
+  window.location.replace('login.html')
+}
+
+
+
+
 var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
@@ -34,3 +43,5 @@ $(document).ready(function(){
   
  
 });
+
+

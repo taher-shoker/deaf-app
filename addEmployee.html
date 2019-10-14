@@ -82,7 +82,7 @@
     <div class="add-employee">
       <div class="title-form"><h4>إضافة موظف</h4></div>
 
-      <form id="employee-form" action=''>
+      <div id="employee-form" >
         <div class="input-control">
           <label> <i class="fas fa-user"></i></label>
           <input type="text" id="fname" name="fname" value="" placeholder="إسم الموظف" required
@@ -121,13 +121,9 @@
             <i class="fas fa-camera"></i>
             <label id="lab-img" for="emp-image"><span><img class="" src="./imgs/default.jpg" alt=""></span>  </label>
             <input type="file" id="emp-image" name="" value=""required >
-          
-             
-            <small id="emailHelp" class="form-text text-muted"></small>
-  
           </div>
-        <Button type='submit' id='login' class='btn' onclick="window.location.href='home.html'">إضافة </button>
-      </form>
+        <Button type='button' id='' class='btn btn-action' onclick="window.location.href='home.html'">إضافة </button>
+        </div>
       <a  href="employeeLists.html"  class='btn return' > رجوع</a>
      
     </div>

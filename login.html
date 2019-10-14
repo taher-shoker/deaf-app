@@ -67,45 +67,44 @@
       <div class="title-form">
         <h4> تسجيل دخول</h4>
       </div>
-      <form id="login-form" name="Form" action=''>
+      <form id="login-form" name="Form" >
         <div class="input-control">
           <label> <i class="fas fa-user"></i></label>
-          <input type="text" id="name" name="Name" value="" placeholder="إسم المستخدم" 
+          <input type="text" id="name" name="name" value="" placeholder="إسم المستخدم" required
             onfocus="this.placeholder=''" onblur="this.placeholder='إسم المستخدم'">
-          <div class="help-buttons">
-            <div class="help-img">
-              <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class="" data-toggle="modal"
-                data-target="#video_popup" data-video="">
-            </div>
-
-            <div class="help-icon">
-              <i class="fas fa-volume-up pt-1 "></i>
-            </div>
-
-          </div>
-
+            <div class="help-buttons">
+                <div class="help-img">
+                  <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class="" data-toggle="modal"
+                    data-target="#video_popup" data-video="">
+                </div>
+    
+                <div class="help-icon">
+                  <i class="fas fa-volume-up pt-1 "></i>
+                </div>
+    
+              </div>
 
         </div>
         <div class="input-control">
           <label> <i class="fas fa-phone-alt"></i> </label>
-          <input type="text" id="phone" name="Phone" value="" placeholder="رقم التليفون" 
+          <input type="text" id="phone" name="phone" value="" placeholder="رقم التليفون" required
             onfocus="this.placeholder=''" onblur="this.placeholder='رقم التليفون'">
-          <div class="help-buttons">
-            <div class="help-img">
-              <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class=" img-fluid " data-toggle="modal"
-                data-target="#video_popup" data-video="">
-            </div>
-
-            <div class="help-icon">
-              <i class="fas fa-volume-up pt-1 fa-1x "></i>
-            </div>
-
-          </div>
-
+            <div class="help-buttons">
+                <div class="help-img">
+                  <img alt="" title="ترجم للغة الاشارة" src="imgs/signvideoicon.png" class="" data-toggle="modal"
+                    data-target="#video_popup" data-video="">
+                </div>
+    
+                <div class="help-icon">
+                  <i class="fas fa-volume-up pt-1 "></i>
+                </div>
+    
+              </div>
 
         </div>
-        <Button type='submit' id='login' class='btn mt-4' >دخول </button>
-      </form>
+        <Button type="submit" id='login' class='btn mt-4 btn-action'>دخول </button>
+        
+        </form>
 
       <div class="bottom">
         <p class="ask"> إذا كان ليس لديك حساب؟
@@ -118,13 +117,15 @@
   </section>
 
   <!--================================== Jquery CDN Links & bootstap Links ========================================-->
-  <script src="./js/jquery.js" type=''crossorigin="anonymous"></script>
+ 
   <script src="./js/jquery-1.11.1.min.js" type=''crossorigin="anonymous"></script>
+  <script src="./js/jquery.js" type=''crossorigin="anonymous"></script>
   <script src="./js/popper.min.js" type=''crossorigin="anonymous"></script>
   <script src="./js/bootstrap.min.js" type=''crossorigin="anonymous"></script>
   <script src="./js/wow.js" type=''crossorigin="anonymous"></script>
   <script src="./js/inputValidation.js" type=''crossorigin="anonymous"></script>
-  <script src="./js/main.js" type='javascript'crossorigin="anonymous"></script>
+  <script src="./js/login.js" type=''crossorigin="anonymous"></script>
+  <script src="./js/main.js" type=''crossorigin="anonymous"></script>
 
 </body>
 
