@@ -3,16 +3,40 @@
         "hotDrinks":[{
             "id":1,
             "drinkName":"قهوة",
-            "drinkImage":"",
-            "videoDrink":"",
+            "drinkImage":"coffee.jpg",
+            "videoDrink":"1.webm",
             "audioDrink":""
-        }],
-        "coldDrink":[{
+        },
+        {
+            "id":2,
+            "drinkName":"شاى",
+            "drinkImage":"tea.jpg",
+            "videoDrink":"1.webm",
+            "audioDrink":""
+        },
+        {
+            "id":3,
+            "drinkName":"نعناع",
+            "drinkImage":"n3na3.jpg",
+            "videoDrink":"1.webm",
+            "audioDrink":""
+        }
+    
+    ],
+        "coldDrinks":[{
             "id":1,
-            "drinkName":"قهوة",
-            "drinkImage":"",
-            "videoDrink":"",
+            "drinkName":"مانجا",
+            "drinkImage":"mango.jpg",
+            "videoDrink":"1.webm",
             "audioDrink":""
-        }]
+        },
+        {
+            "id":2,
+            "drinkName":"ليمون",
+            "drinkImage":"lemon.jpg",
+            "videoDrink":"1.webm",
+            "audioDrink":""
+        }
+    ]
     }
 }
